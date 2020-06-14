@@ -16,7 +16,7 @@
 
 ## Prerequistes
 ![alt_text](https://img.shields.io/badge/Required-Javascript-red)
-![alt_text])(https://img.shields.io/badge/Required-Internet%20Browser-red)
+![alt_text](https://img.shields.io/badge/Required-Internet%20Browser-red)
 ## Instructions
 #
 1.  visit  https://mrmikehoyt.github.io 
