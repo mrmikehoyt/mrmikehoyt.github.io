@@ -10,7 +10,6 @@
 
 # Built with
 ![alt_text](https://img.shields.io/badge/Technologies-jQuery-green)
-
 ![alt_text](https://img.shields.io/badge/Technologies-HTML-green)
 ![alt_text](https://img.shields.io/badge/Technologies-CSS-green)
 
