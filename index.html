@@ -19,8 +19,6 @@
           <script type="text/javascript" src="public/assets/plugins/novacancy/javascript/jquery.novacancy.min.js"></script>
           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script src="public/assets/plugins/randomtext/js/randomize_text.js"></script>
           <script src="public/assets/plugins/reveal-delay/delay-text.js"></script>
 
           <script type="text/javascript" src="public/assets/plugins/novacancy/javascript/jquery.novacancy.js"></script>
@@ -44,11 +42,11 @@
     'color': 'Blue',
     'blink': true,
     'glow': ['0 0 800px Blue','0 0 30px Blue', '0 0 60px Blue']
-
+      
   });
   $('.vacancy').novacancy({
     'color': '#2C75FF',
-    'glow': ['800px 800px 800px #7DF9FF','60px 60px 60px #7DF9FF', '0 0 120px #7DF9FF']
+    'glow': ['0px 0px 25px #2C75FF']
 
   });
 });
@@ -67,7 +65,7 @@ $(function(){
 });
 
 $(function(){
-  $('.glitch').glitch({
+  $('.glitchnoteused').glitch({
     chars: '!<>-_\\/[]{}—=+*^?#@$%&()~`qwertyuiop[]{}\|;:lkjhgfdsazxcvbnm,./?zxcvbnmQWERTYUIOPASDFGHJKLMNBVCXZ________',
     charTime: 130,
     finalText: undefined,
@@ -78,18 +76,23 @@ $(function(){
 
   });
 });
+
 </script>
           
             <style>
 
+​
 div {
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
-  touch-action: none;
-
+  overflow: scroll;
+-webkit-overflow-scrolling: touch;
 }
+
+.glitch {
+  color:#337ab7;}
 
             </style>
           <!--Buttons--> 
@@ -109,12 +112,20 @@ div {
             </button>
         
             <div class="dropdown-menu">
-              <a class="dropdown-item" a href="https://polar-hollows-18989.herokuapp.com/" target="_blank">Eat Da Burger</a>
-              <a class="dropdown-item" a href="https://warm-ravine-98824.herokuapp.com/" target="_blank">Notetaker</a>
-              
-              <a class="dropdown-item" href="https://desolate-retreat-92332.herokuapp.com/">Shop Local</a>
+              <a class="dropdown-item" a href="https://polar-hollows-18989.herokuapp.com/" target="_blank">Eat Da Burger Demo</a>
+              <a class="dropdown-item" a href="https://warm-ravine-98824.herokuapp.com/" target="_blank">Notetaker Demo</a>
+              <a class="dropdown-item" href="https://mrmikehoyt.github.io/Workdayscheduler/" target="_blank">Work Day Scheduler Demo</a>
+              <a class="dropdown-item" href="https://github.com/mrmikehoyt/Team-Profile-Generator/blob/master/images/video.gif" target="_blank">Team Profile Generator Demo</a>
+              <a class="dropdown-item" href="https://maxsem4.github.io/CrimeAPI" target="_blank">Crime API Project 1 Demo</a>
+              <a class="dropdown-item" href="https://desolate-retreat-92332.herokuapp.com/" target="_blank">Shop Local Project 2 Demo</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" a href=" " target="_blank">Projects on Github</a>
+              <a class="dropdown-item" a href="https://github.com/mrmikehoyt" target="_blank">Featured Projects on Github</a>
+              <a class="dropdown-item" a href="https://github.com/Maxsem4/CrimeAPI" target="_blank">Project 1 Crime API  on Github</a>
+              <a class="dropdown-item" a href="https://github.com/IanHooper613/Project-2" target="_blank">Project 2 Shop Local on Github</a>
+              <a class="dropdown-item" a href="https://github.com/mrmikehoyt/burger" target="_blank">Eat Da Burger on Github</a>
+              <a class="dropdown-item" a href="https://github.com/mrmikehoyt/Notetaker" target="_blank">Notetaker on Github</a>
+              <a class="dropdown-item" a href="https://github.com/mrmikehoyt/Workdayscheduler" target="_blank">Work Day Scheduler on Github</a>
+              <a class="dropdown-item" a href="https://github.com/mrmikehoyt/Team-Profile-Generator" target="_blank">Team Profile Generator on Github</a>
             </div>
           </div>
         
@@ -124,7 +135,7 @@ div {
             </button>
         
             <div class="dropdown-menu">
-              <a class="dropdown-item" a href="https://www.linkedin.com/mrmikehoytottawa" target="_blank">LinkedIn</a>
+              <a class="dropdown-item" a href="https://www.linkedin.com/in/mrmikehoytottawa" target="_blank">LinkedIn</a>
               <a class="dropdown-item" a href="https://github.com/mrmikehoyt" target="_blank">GitHub</a>
               <a class="dropdown-item" a href="mailto:m.mikehoyt@outlook.com" target="_blank">Email</a>
               <a class="dropdown-item" a href="callto://+16138892364">Call Me</a>
@@ -158,12 +169,14 @@ div {
     <center>
       <div class="card">
         <div class="card-body">
-          <img src="public/assets/images/michael.jpg" class="rounded float-left" alt="...">
+          <img src="public/assets/images/michael.jpg" class="rounded float-left" alt="Michael">
 
          <p class="cardtext"> Over 10 years of experience in the IT Field specializing in a wide variety of aspects from Linux System Administration, to supporting Windows desktop operating systems. Currently enrolled in the  24 week intensive Trilogy full stack coding bootcamp at Carleton University. Strong commitment to data-driven decision making, including impacts on stakeholders. Highly creative in regards to problem-solving and innovation development. Holds communication in high regard; works well with others or alone, and very self motivated.</p> 
-           
-         <h2 style="text-align:center; float:center; " class="vacancy">Top Skills</h3>
-          <center></center>
+          <div id="neonsign;" class="invisible">hi</div> 
+         <h2 style="text-align:center; float:center; " class="vacancy">Top Skills</h2>
+        </div>
+        
+         <center></center>
        
           
 
@@ -189,14 +202,14 @@ div {
       <th scope="row"></th>
       <td class="glitch">Sequelize</td>
       <td class="glitch">Handlebars</td>
-      <td class="glitch">MongoDB</td>
+      <td class="glitch">Express</td>
       <td class="glitch">GitBash</td>
     </tr>
     <tr>
       <th scope="row"></th>
-      <td class="glitch">Mongoose</td>
-      <td class="glitch">Best Practices</td>
-      <td class="glitch">reactOS</td>
+      <td class="glitch">API's</td>
+      <td class="glitch">Code Debugging</td>
+      <td class="glitch">Wire Framing</td>
       <td class="glitch">Routes</td>
     </tr>
   </tbody>
@@ -214,7 +227,7 @@ div {
                 <div class="card-body">
                   <h5 class="card-title, randomtext2">Work Day Scheduler</h5>
                   <p class="card-text, randomtext2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <img src="public/assets/images/workdayschedulerwebsiteresized.JPG" class="card-img-top" alt="...">
+                  <img src="C:\users\mike\downloads\workdayscheduler.png" class="card-img-top" alt="...">
               </div>
               </div>
             </div>
@@ -222,9 +235,9 @@ div {
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title, randomtext2">Team Profile Generator</h5>
-                  <p class="card-text, randomtext2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text, randomtext2">This is an application that uses an HTML renderer, Inquirer and FS and allows you to generate an engineering team.</p>
                   <p class="customtop"></p>
-                  <img src="public/assets/images/teamprofilegeneratorvideo.gif" class="card-img-top" alt="...">
+                  <img src="C:\users\mike\downloads\workdayschedulers8.gif" class="card-img-top" alt="Team Profile Generator">
 
                 </div>
               
@@ -236,7 +249,7 @@ div {
                 <div class="card-body">
                   <h5 class="card-title, randomtext2">Note Taker</h5>
                   <p class="card-text, randomtext2">This is a simple application that allows you to create and save notes.</p>
-                  <img src="public/assets/images/notetakerwebsite1.JPG" class="card-img-top" alt="...">
+                  <img src="public/assets/images/notetakerwebsite1.JPG" class="card-img-top" alt="Note Taker">
 
                 </div>
               </div>
@@ -246,7 +259,7 @@ div {
                 <div class="card-body">
                   <h5 class="card-title, randomtext2">Eat Da Burger</h5>
                   <p class="card-text, randomtext2">This is a simple application that lets you devour and restore a burger. It uses a custom orm, routes, mySQL,Heroku and Handlebars</p>
-                  <img src="public/assets/images/burgerwebsite.JPG" class="card-img-top" alt="...">
+                  <img src="public/assets/images/burgerwebsite.JPG" class="card-img-top" alt="Eat Da Burger">
 
                   
                 </div>
@@ -257,7 +270,9 @@ div {
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title, randomtext2">Project 1 Crime API</h5>
-                <p class="card-text, randomtext2">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text, randomtext2">This is a project that uses the Crime Data Explorer API provided by the FBI, chart.js which is a opensource charting javascript for designers and developers,and the Bulma CSS framework.</p>
+                <img src="public/assets/images/project1.PNG" class="card-img-top" alt="project1">
+
               </div>
             </div>
           </div>
@@ -265,8 +280,8 @@ div {
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title, randomtext2">Project 2 Shop Local</h5>
-                <p class="card-text, randomtext2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
+                <p class="card-text, randomtext2">This is a project that uses Sequelize,Heroku,nodeJS, Express, and Routes. It allows you to buy produce from local farmers.</p>
+                <img src="public/assets/images/project2.PNG" class="card-img-top" alt="project2">              </div>
             </div>
           </div>
         </div>
