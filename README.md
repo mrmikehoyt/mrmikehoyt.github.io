@@ -1,6 +1,6 @@
 ### Portfolio Version 2
 #
-![alt text](images/michael.jpg)
+![alt text](public/assets/images/michael.jpg)
 
 ## This is my portfolio that demonstrates the skills I learned so farin the Trilogy 24 week intensive bootcamp course at Carleton University. Click on the below image to go to my portfolio website
 ##
