@@ -4,7 +4,7 @@
 
 ## This is my portfolio that demonstrates the skills I learned so farin the Trilogy 24 week intensive bootcamp course at Carleton University. Click on the below image to go to my portfolio website
 ##
-<a href="https://mrmikehoyt.github.io"><img border="0" alt="Portfolio" src="images/portfolio.PNG" width="969" height="686">
+<a href="https://mrmikehoyt.github.io"><img border="0" alt="Portfolio" src="public/assets/images/portfolio.PNG" width="969" height="686">
 
 ## This website uses jQuery, HTML, and CSS
 
